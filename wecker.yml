@@ -1,0 +1,8 @@
+box: rocker/hadleyverse
+build:
+  steps:
+    - jimhester/r-dependencies
+    - script:
+        name: build book
+        code: |
+          make
